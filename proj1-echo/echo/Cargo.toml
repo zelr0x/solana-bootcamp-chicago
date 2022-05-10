@@ -1,0 +1,15 @@
+cargo-features = ["edition2021"]
+
+[package]
+name = "echo"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+borsh = "0.9"
+solana-program = "=1.10.8"
+thiserror = "1.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
